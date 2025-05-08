@@ -2,20 +2,21 @@ package Alberto_Martin_Hidalgo_RA4_;
 
 import java.util.Date;
 
-public class ImprimirJulioHornos {
+
+public class ImprimirAlbertoMartinHidalgo {
 	
-	public void imprimirDatosJulioHornos(String nombre, String apellido, String dni, String ciudadNac) {
-		
+	public void imprimirDatosAlbertoMartinHidalgo(String nombre, String apellido, String dni, String ciudadNac) {
+		// Si la ciudad de nacimento no es igual a Madrid
 		if(ciudadNac.equalsIgnoreCase("Madrid")) {
 			System.out.println("El alumno estudia en la misma ciudad que nació");
 		} else {
 			System.out.println("El alumno NO estudia en la misma ciudad que nació");
 		}
 				
-		
+		//Contador de caracter
 		int contador = 0;
 		String caracter;
-		
+		//Si los caracteresson igual a una vocal se le aumenta en 1 el valor
 		for (int i = 0; i < nombre.length(); i++) {
 			caracter = nombre.substring(i,i+1).toLowerCase();						
 			if(caracter.equals("a")) contador ++;
@@ -24,7 +25,7 @@ public class ImprimirJulioHornos {
 			if(caracter.equals("o")) contador ++;
 			if(caracter.equals("u")) contador ++;			
 		}			
-		
+		//Contador que cuenta las vocales
 		if (contador<3) System.out.println("El nombre tiene pocas vocales"); 
 		else System.out.println("El nombre tiene suficientes vocales");
 				
@@ -56,6 +57,7 @@ public class ImprimirJulioHornos {
 				dniValido = false;
 			}
 		}		
+		//Si los caracteresson igual a una vocal se le aumenta en 1 el valor
 
 		contador = 0;
 		for (int i = 0; i < apellido.length(); i++) {
